@@ -14,19 +14,19 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Just another Blog aggregator # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  In Progress blog aggregator.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://kiranprasad2001.github.io/blog-aggregator"
 
 github:
-  username: github_username # change to your GitHub username
+  username: kiranprasad2001 # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -34,8 +34,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: KP
+  email: kp@spotrot.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
@@ -170,13 +170,15 @@ collections:
   tabs:
     output: true
     sort_by: order
+  blogs:
+    output: true
 
 defaults:
   - scope:
       path: "" # An empty string here means all files in the project
-      type: posts
+      type: blogs
     values:
-      layout: post
+      layout: blog
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
@@ -215,6 +217,10 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - assets/feed.xml
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -224,3 +230,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
