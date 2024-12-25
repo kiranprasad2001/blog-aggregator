@@ -8,7 +8,7 @@ layout: page
 
   {% for tag in tags %}
     <div>
-      <a class="tag" href="{{ tag | slugify | prepend: '/tags/' | append: '/' | relative_url }}">
+      <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | prepend: site.baseurl | append: '/' | relative_url }}">
         {{ tag -}}
         <span class="text-muted">{{ site.tags[tag].size }}</span>
       </a>
