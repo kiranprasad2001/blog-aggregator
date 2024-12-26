@@ -11,7 +11,7 @@ def create_tag_files(data):
             # Store the original tag with spaces for the title
             original_tag = tag  
             # Replace spaces with hyphens for the filename
-            tag = tag.replace(" ", "-")  
+            tag = tag.replace(" ", "-").replace(".", "-")
             if tag not in tag_data:
                 tag_data[tag] = {'count': 0, 'links': [], 'original_tag': original_tag}
             tag_data[tag]['count'] += 1
