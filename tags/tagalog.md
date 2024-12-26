@@ -1,7 +1,7 @@
 ---
 layout: tag
-title: nlp
-count: 7
+title: tagalog
+count: 6
 ---
 
 - [The missing pieces in Filipino NLP in the age of LLMs](https://ljvmiranda921.github.io/notebook/2024/12/17/filipino-llm/)
@@ -10,4 +10,3 @@ count: 7
 - [Do large language models work on Tagalog?](https://ljvmiranda921.github.io/notebook/2023/08/04/llm-tagalog/)
 - [calamanCy: NLP pipelines for Tagalog](https://ljvmiranda921.github.io/projects/2023/08/01/calamancy/)
 - [Some thoughts on the annotation process](https://ljvmiranda921.github.io/notebook/2023/07/03/devlog-calamancy/)
-- [Study notes on parameter-efficient finetuning techniques](https://ljvmiranda921.github.io/notebook/2023/05/01/peft/)
