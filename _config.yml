@@ -219,7 +219,6 @@ exclude:
   - "package*.json"
   - Gemfile
   - Gemfile.lock
-  - node_modules
   - assets/feed.xml
 
 jekyll-archives:
